@@ -5,3 +5,11 @@ nickname = input("Придумайте себе новое имя_ ")
 print(f"Привет, {username}! тебе {age}, но для меня ты будешь {nickname}")
 
 Task 2
+seconds = int(input("Для преобразования введите количество секунд: "))
+hours = seconds // 3600
+
+minutes = ((seconds / 3600) - hours) * 60
+
+seconds_final = (minutes - int(minutes)) * 60
+
+print(f"{seconds} секунд составит {hours} час(ов) {int(minutes)} минут(ы) {int(seconds_final)} секунд(ы)")

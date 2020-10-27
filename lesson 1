@@ -13,3 +13,10 @@ minutes = ((seconds / 3600) - hours) * 60
 seconds_final = (minutes - int(minutes)) * 60
 
 print(f"{seconds} секунд составит {hours} час(ов) {int(minutes)} минут(ы) {int(seconds_final)} секунд(ы)")
+
+task 3
+number = int(input("Введите любое число от 1 до 9: "))
+number_11 = number * 11
+number_111 = number * 111
+sum = number + number_11 + number_111
+print(f"Сумма чисел {number}, {number_11} и {number_111} составит {sum}")

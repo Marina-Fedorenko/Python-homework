@@ -1,0 +1,7 @@
+Task 1
+username = input("Введите ваше имя_ ")
+age = int(input("Введите ваш возраст_ "))
+nickname = input("Придумайте себе новое имя_ ")
+print(f"Привет, {username}! тебе {age}, но для меня ты будешь {nickname}")
+
+Task 2

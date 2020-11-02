@@ -25,3 +25,32 @@ elif 9 <= month_number <= 11:
             print(list[3])
 else:
     print(list[0])
+    
+Task 4
+string = input("введите строку ")
+word = []
+num = 1
+for el in range(string.count(' ') + 1):
+    word = string.split()
+    if len(str(word)) <= 10:
+        print(f" {num} {word [el]}")
+        num += 1
+    else:
+        print(f" {num} {word [el] [0:10]}")
+        num += 1
+        
+ Task 5
+ my_list = [9, 8, 6, 4, 2]
+print(my_list)
+number = int(input("Введите новый элемент рейтинга: ____"))
+for el in range(len(my_list)):
+        if my_list[el] == number:
+            my_list.insert(el + 1, number)
+            break
+        elif my_list[0] < number:
+            my_list.insert(0, number)
+        elif my_list[-1] > number:
+            my_list.append(number)
+        elif my_list[el] > number and my_list[el + 1] < number:
+            my_list.insert(el + 1, number)
+print(my_list)

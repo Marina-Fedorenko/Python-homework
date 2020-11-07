@@ -1,0 +1,43 @@
+task 1
+number1 = int(input("Введите первое число: "))
+number2 = int(input("Введите второе число: "))
+
+def calculate(number1, number2):
+      try:
+          return  number1 / number2
+      except ZeroDivisionError:
+        return
+
+print("Результат деления чисел составил ",  calculate(number1, number2))
+
+task 2 почему-то не выводит информацию, если подскажете как это сделать, буду благодарна!
+name1 = input("Введите ваше имя: ")
+last_name1 = input("Введите вашу фамилию: ")
+year1 = input("В каком году вы родились? ")
+email1 = input("Введите вашу электронную почту: ")
+number1 = input("Введите ваш номер телефона: ")
+
+def information (name, last_name, year, email, number):
+    print(f"name = {name1}, last_name = {last_name1}, year = {year1}, email = {email1}, number = {number1}")
+
+    information(name = name1, last_name = last_name1, year = year1, email = email1, number = number1)
+    
+task 3 
+def my_func(arg1 , arg2, arg3):
+    if arg1 >= arg3 and arg2 >= arg3:
+        return arg1 + arg2
+    elif arg1 > arg2 and arg1 < arg3:
+        return arg1 + arg3
+    else:
+        return arg2 + arg3
+
+print(f'Result - {my_func(int(input("enter first argument ")), int(input("enter second argument ")), int(input("enter third argument ")))}')
+
+task 4 -
+task 5 -
+task 6
+def int_func (*args):
+    word = input("Input words ")
+    print(word.title())
+    return
+int_func()

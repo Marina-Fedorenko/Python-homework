@@ -1,0 +1,33 @@
+task 1
+import sys
+from lesson_4 import salary_mod
+
+try:
+    hour, rate, bonus = sys.argv
+
+except ValueError:
+    print("некорректные данные")
+
+print(salary_mod.calculate(int(salary)))
+
+task 2
+my_list = [15, 2, 3, 1, 7, 5, 4, 10]
+my_new_list = [el for num, el in enumerate(my_list) if my_list[num - 1] < my_list[num]]
+print(f'Исходный список {my_list}')
+print(f'Новый список {my_new_list}')
+
+task 3
+print(f'Числа от 20 до 240 кратные 20 или 21 - {[el for el in range(20, 241) if el % 20 == 0 or el % 21 == 0]}')
+
+task 4
+my_list = [2, 2, 2, 7, 23, 1, 44, 44, 3, 2, 10, 7, 4, 11]
+my_new_list = [el for el in my_list if my_list.count(el) < 2]
+print(my_new_list)
+
+task 6
+from itertools import count
+
+for el in count(int(input('Введите стартовое число '))):
+   # print(el)
+if el in count > 10:
+    break
